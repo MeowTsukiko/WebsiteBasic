@@ -1,0 +1,52 @@
+图床请使用微博图床。
+图片链接头部增加https。
+删除content文件夹。
+
+git clone https://github.com/MeowTsukiko/content.git
+
+在content文件夹下面修改MD文件内容。
+预览网站：在公共文件夹下面启动hugo
+hugo server --theme=LoveIt --disableFastRender
+
+
+文件上传推送刷新
+在content文件夹下
+git init
+
+git remote add github git@github.com:MeowTsukiko/content.git
+
+git config --global user.email "503931350@qq.com"
+
+git config --global user.name "MeowTsukiko"
+
+git add .
+
+git commit -m "init"
+
+git push -f github master:master
+
+主文件夹下：
+网站生成: hugo --theme=LoveIt --destination=meowtsukiko.github.io
+
+
+网站上传推送刷新：
+git init
+
+git remote add github git@github.com:MeowTsukiko/meowtsukiko.github.io.git
+
+git config --global user.email "503931350@qq.com"
+
+git config --global user.name "MeowTsukiko"
+
+git add .
+
+git commit -m "init"
+
+git push -f github master:master
+
+
+
+
+
+
+

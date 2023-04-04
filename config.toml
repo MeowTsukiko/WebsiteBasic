@@ -1,0 +1,160 @@
+baseURL = "https://meowtsukiko.github.io/"
+# [en, zh-cn, fr, ...] 设置默认的语言
+defaultContentLanguage = "zh-cn"
+# 网站语言, 仅在这里 CN 大写
+languageCode = "zh-CN"
+# 是否包括中日韩文字
+hasCJKLanguage = true
+# 网站标题
+title = "众神未曾眷顾之人"
+
+# 更改使用 Hugo 构建网站时使用的默认主题
+theme = "LoveIt"
+
+[params]
+  # LoveIt 主题版本
+  version = "0.2.X"
+  description = "众神未曾眷顾之人"
+  images = ["/android-chrome-512x512.png"]
+[params.app]
+  # 当添加到 iOS 主屏幕或者 Android 启动器时的标题, 覆盖默认标题
+  title = "众神未曾眷顾之人"
+  # 是否隐藏网站图标资源链接
+  noFavicon = false
+  # 更现代的 SVG 网站图标, 可替代旧的 .png 和 .ico 文件
+  svgFavicon = "/android-chrome-512x512.png"
+  # Android 浏览器主题色
+  themeColor = "#ffffff"
+  # Safari 图标颜色
+  iconColor = "#5bbad5"
+  # Windows v8-10 磁贴颜色
+  tileColor = "#da532c"
+[params.footer]
+    enable = true
+    # LoveIt 新增 | 0.2.0 自定义内容 (支持 HTML 格式)
+    custom = 'Powered by Tsukiko_N'
+    # LoveIt 新增 | 0.2.0 是否显示 Hugo 和主题信息
+    hugo = false
+    # LoveIt 新增 | 0.2.0 是否显示版权信息
+    copyright = true
+    # LoveIt 新增 | 0.2.0 是否显示作者
+    author = true
+    # 网站创立年份
+    since = 2021
+    # ICP 备案信息，仅在中国使用 (支持 HTML 格式)
+    icp = "沪ICP备14032295"
+    # 许可协议信息 (支持 HTML 格式)
+    license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+   [params.section]
+    # section 页面每页显示文章数量
+    paginate = 20
+    # 日期格式 (月和日)
+    dateFormat = "01-02"
+  [params.list]
+    # list 页面每页显示文章数量
+    paginate = 20
+    # 日期格式 (月和日)
+    dateFormat = "01-02"
+  [params.home]
+   [params.home.profile]
+      enable = true
+      subtitle = "You can't leave this world to the people you despise."
+      # 是否为副标题显示打字机动画
+      typeit = true
+      # 是否显示社交账号
+      social = true
+      gravatarEmail = ""
+       # 主页显示头像的 URL
+      avatarURL = "https://i.postimg.cc/kXjKkCPj/ava-Nekosmall.jpg"
+       # 主页显示的网站标题 (支持 HTML 格式)
+ [params.social]
+  Github = "MeowTsukiko"
+  Twitter = "E_Tsukiko"
+  instagram = "rich7pig"
+  [params.page]
+    # whether to hide a page from home page
+    # 是否在主页隐藏一篇文章
+    hiddenFromHomePage = false
+    # whether to hide a page from search results
+    # 是否在搜索结果中隐藏一篇文章
+    hiddenFromSearch = false
+    # whether to enable twemoji
+    # 是否使用 twemoji
+    twemoji = false
+    # whether to enable lightgallery
+    # 是否使用 lightgallery
+    lightgallery = false
+    # whether to enable the ruby extended syntax
+    # 是否使用 ruby 扩展语法
+    ruby = true
+    # whether to enable the fraction extended syntax
+    # 是否使用 fraction 扩展语法
+    fraction = true
+    # whether to enable the fontawesome extended syntax
+    # 是否使用 fontawesome 扩展语法
+    fontawesome = true
+    # whether to show link to Raw Markdown content of the content
+    # 是否显示原始 Markdown 文档内容的链接
+    linkToMarkdown = true
+    # whether to show the full text content in RSS
+    # 是否在 RSS 中显示全文内容
+    rssFullText = false
+    # Table of the contents config
+    # 目录配置
+    [params.page.toc]
+      # whether to enable the table of the contents
+      # 是否使用目录
+      enable = true
+      # whether to keep the static table of the contents in front of the post
+      # 是否保持使用文章前面的静态目录
+      keepStatic = false
+      # whether to make the table of the contents in the sidebar automatically collapsed
+      # 是否使侧边目录自动折叠展开
+      auto = true
+    [params.page.comment]
+      enable = true
+      [params.page.comment.utterances]
+        enable = true
+        # owner/repo
+        repo = "MeowTsukiko/tsukiko-blog-comment"
+        issueTerm = "pathname"
+        label = ""
+        lightTheme = "github-light"
+        darkTheme = "github-dark"
+        crossorigin="anonymous"
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
+    pre = ""
+    # 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标
+    post = ""
+    name = "文章"
+    url = "/posts/"
+    # 当你将鼠标悬停在此菜单链接上时, 将显示的标题
+    title = ""
+    weight = 1
+  [[menu.main]]
+    identifier = "tags"
+    pre = ""
+    post = ""
+    name = "标签"
+    url = "/tags/"
+    title = ""
+    weight = 2
+  [[menu.main]]
+    identifier = "categories"
+    pre = ""
+    post = ""
+    name = "分类"
+    url = "/categories/"
+    title = ""
+    weight = 3
+
+# Hugo 解析文档的配置
+[markup]
+  # 语法高亮设置 (https://gohugo.io/content-management/syntax-highlighting)
+  [markup.highlight]
+    # false 是必要的设置 (https://github.com/dillonzq/LoveIt/issues/158)
+    noClasses = false
+
